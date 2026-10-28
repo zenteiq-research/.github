@@ -1,0 +1,91 @@
+name: Bug report
+description: Report a crash, an error, or an incorrect numerical result.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time to report a problem. Please search existing issues first.
+        **Security vulnerabilities must not be reported here.** See our [security policy](https://github.com/zenteiq-research/.github/blob/main/SECURITY.md).
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Type of problem
+      options:
+        - Crash, exception or error message
+        - Incorrect numerical result
+        - Performance regression
+        - Installation or packaging
+        - Documentation is wrong or unclear
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: A clear description of the problem.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Minimal reproducible example
+      description: The smallest code, configuration or command that shows the problem. Remove anything that is not needed.
+      render: python
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+      description: |
+        What you expected to happen instead.
+        For an incorrect numerical result, state the reference you are comparing against (an analytical solution, a reference solver, or published values), the error you observed, and the tolerance you expected.
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Error output or logs
+      description: Paste the full traceback or relevant log output. This is formatted as code automatically.
+      render: shell
+
+  - type: input
+    id: version
+    attributes:
+      label: Package version or commit
+      placeholder: "e.g. 0.3.1, or commit abc1234"
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Operating system, Python version, key library versions (e.g. PyTorch, JAX, TensorFlow), and hardware (CPU, or GPU model with CUDA version).
+      placeholder: |
+        OS: Ubuntu 24.04
+        Python: 3.12
+        PyTorch: 2.x
+        Hardware: NVIDIA A100, CUDA 12.x
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched existing issues and this has not been reported.
+          required: true
+        - label: I can reproduce this with the latest release or the `main` branch.
+          required: false
+        - label: My report contains no confidential, client-owned or personal data.
+          required: true

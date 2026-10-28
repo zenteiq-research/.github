@@ -1,0 +1,63 @@
+name: Feature request
+description: Suggest a new feature, numerical method, model, problem or benchmark.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for the suggestion. For open-ended ideas or questions, please consider starting a Discussion first, where enabled.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - New method, solver or model architecture
+        - New problem, dataset or benchmark task
+        - Evaluation metric or scoring
+        - API or usability improvement
+        - Performance or scalability
+        - Documentation or examples
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or motivation
+      description: What are you trying to do, and why is it hard or impossible today?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe what you would like to see. Include an example of how the API might look, if relevant.
+    validations:
+      required: true
+
+  - type: textarea
+    id: references
+    attributes:
+      label: References and validation
+      description: Papers, reference implementations or datasets that describe the method, and how its correctness could be tested (for example, against an analytical solution or a reference solver).
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Other approaches or workarounds you have tried.
+
+  - type: dropdown
+    id: contribute
+    attributes:
+      label: Would you like to contribute this?
+      options:
+        - Yes, I would like to open a pull request
+        - Possibly, with guidance from maintainers
+        - No
+    validations:
+      required: true

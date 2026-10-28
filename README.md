@@ -1,50 +1,25 @@
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/zenteiq-research/.github/main/profile/assets/zenteiq-logo-dark.png">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/zenteiq-research/.github/main/profile/assets/zenteiq-logo-light.png">
-    <img alt="ZenteiQ" src="https://raw.githubusercontent.com/zenteiq-research/.github/main/profile/assets/zenteiq-logo-light.png" width="320">
-  </picture>
-</p>
+# zenteiq-research/.github
 
-<h3 align="center">Frontier AI for the physical world</h3>
+This repository holds the organisation-wide defaults for [github.com/zenteiq-research](https://github.com/zenteiq-research).
 
-<p align="center">
-  Open-source research software from ZenteiQ for scientific machine learning,<br>
-  scientific foundation models and their evaluation.
-</p>
+GitHub uses these files for every public repository in the organisation that does not have its own copy, so a single change here updates the whole organisation. A repository can override any default by adding its own file of the same name.
 
-<p align="center">
-  <a href="https://zenteiq.ai">Website</a> ·
-  <a href="https://zenteiq.ai/research/">Research</a> ·
-  <a href="https://scirex.org">ScireX</a> ·
-  <a href="https://www.linkedin.com/company/zenteiq/">LinkedIn</a> ·
-  <a href="https://zenteiqai.keka.com/careers">Careers</a>
-</p>
-
----
-
-### Projects
-
-| Project | What it is |
+| Path | Purpose |
 | :--- | :--- |
-| **[ScireX](https://github.com/zenteiq-research/scirex)** | An open-source framework for scientific machine learning. It brings physics-informed neural networks, neural operators and classical numerical methods into one workflow, with the numerical solver kept as the reference. Documentation at [scirex.org](https://scirex.org). |
-| **[Dhīr-Bench](https://github.com/zenteiq-research/dhir-bench)** | <!-- TODO: confirm description with the Dhīr evaluation team --> Benchmarks and an evaluation harness for scientific foundation models, including ZenteiQ's Dhīr family, scoring results against reference numerical solutions and physical constraints. |
+| `profile/README.md` | The public organisation profile shown at github.com/zenteiq-research |
+| `profile/assets/` | Logo files used by the profile (light and dark variants), plus the square avatar to upload under Settings → Profile |
+| `CODE_OF_CONDUCT.md` | Expected behaviour and how conduct concerns are handled |
+| `CONTRIBUTING.md` | How to contribute, including testing standards and DCO sign-off |
+| `GOVERNANCE.md` | Roles, decision-making, repository admission and release rules |
+| `SECURITY.md` | How to report vulnerabilities privately |
+| `SUPPORT.md` | Where to get help |
+| `.github/ISSUE_TEMPLATE/` | Default issue forms and contact links |
+| `.github/PULL_REQUEST_TEMPLATE.md` | Default pull request checklist |
+| `workflow-templates/` | Starter GitHub Actions workflows offered to all repositories |
 
-### How we work
+Two things to know before editing:
 
-**Physics first.** Models are judged by whether their answers hold up against reference numerical solutions and physical constraints, not by how fluent they sound.
+1. This repository must stay **public**, or the defaults stop applying.
+2. If a repository has *any* file in its own `.github/ISSUE_TEMPLATE/` folder, none of the default issue templates are used there. Repositories that customise templates should copy the ones they still need.
 
-**Reproducible by default.** Every result we publish should be re-runnable from code, configuration and data that are documented and versioned.
-
-**Open where it advances science.** Everything in this organisation is public and openly licensed. Commercial products are built and supported separately by ZenteiQ.
-
-### Get involved
-
-- Read the [contributing guide](https://github.com/zenteiq-research/.github/blob/main/CONTRIBUTING.md) and our [code of conduct](https://github.com/zenteiq-research/.github/blob/main/CODE_OF_CONDUCT.md).
-- Report bugs and request features in each project's issue tracker.
-- Report security vulnerabilities privately, as described in our [security policy](https://github.com/zenteiq-research/.github/blob/main/SECURITY.md).
-- If you use our software in research, please cite it using the `CITATION.cff` file in each repository.
-
----
-
-<sub>Maintained by <b>Zenteiq Aitech Innovations Private Limited</b>. Born at IISc Bangalore. Supported by the IndiaAI Mission.</sub>
+Changes to this repository follow the same review rules as any other repository in the organisation (see [GOVERNANCE.md](GOVERNANCE.md)), with approval from an organisation owner.

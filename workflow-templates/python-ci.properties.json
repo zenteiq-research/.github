@@ -1,0 +1,6 @@
+{
+  "name": "ZenteiQ Research Python CI",
+  "description": "Lint with Ruff and run pytest on Python 3.10 to 3.12, following ZenteiQ Research contribution standards.",
+  "categories": ["Python"],
+  "filePatterns": ["pyproject\\.toml$", "setup\\.py$"]
+}
