@@ -1,8 +1,8 @@
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/zenteiq-research/.github/main/profile/assets/zenteiq-logo-dark.png">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/zenteiq-research/.github/main/profile/assets/zenteiq-logo-light.png">
-    <img alt="ZenteiQ" src="https://raw.githubusercontent.com/zenteiq-research/.github/main/profile/assets/zenteiq-logo-light.png" width="320">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/zenteiq-research/.github/main/profile/assets/zenteiq-logo.png">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/zenteiq-research/.github/main/profile/assets/zenteiq-logo.png">
+    <img alt="ZenteiQ" src="https://raw.githubusercontent.com/zenteiq-research/.github/main/profile/assets/zenteiq-logo.png" width="320">
   </picture>
 </p>
 
