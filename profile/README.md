@@ -29,6 +29,8 @@
 | :--- | :--- |
 | **[ScireX](https://github.com/zenteiq-research/scirex)** | An open-source framework for scientific machine learning. It brings physics-informed neural networks, neural operators and classical numerical methods into one workflow, with the numerical solver kept as the reference. Documentation at [scirex.org](https://scirex.org). |
 | **[Dhīr-Bench](https://github.com/zenteiq-research/dhir-bench)** | <!-- TODO: confirm description with the Dhīr evaluation team --> Benchmarks and an evaluation harness for scientific foundation models, including ZenteiQ's Dhīr family, scoring results against reference numerical solutions and physical constraints. |
+| **[BrahmAI Tokenizer Eval](https://github.com/zenteiq-research/brahmai-tokenizer-eval)** | Reproducible tokenizer evaluation with deep coverage of the 22 scheduled Indian languages. It reports tokens per 1,000 bytes, fertility and token premium on pinned public corpora, with bootstrap confidence intervals and probes for silent tokenizer failures. |
+| **[BrahmAI Eval](https://github.com/zenteiq-research/brahmai-eval)** | Evaluates a Hugging Face checkpoint on 228 open benchmark tasks (English, code, mathematics, Indian languages, tool use) with vLLM, in one command, writing full provenance for every run. |
 
 ### How we work
 
